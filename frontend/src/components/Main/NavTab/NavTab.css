@@ -1,0 +1,55 @@
+.menu {
+  margin: 151px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu__button {
+  width: 96px;
+  height: 36px;
+  background-color: #303030;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.menu__button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.menu__button-text {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    margin: 314px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    margin-top: 212px;
+    gap: 6px;
+  }
+
+  .menu__button {
+    width: 82px;
+    height: 26px;
+  }
+
+  .menu__button-text {
+    font-size: 10px;
+  }
+}

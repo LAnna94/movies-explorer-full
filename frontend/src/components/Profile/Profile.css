@@ -1,0 +1,172 @@
+.profile {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: calc(100vh - 94px);
+  position: relative;
+  padding: 54px 0 0;
+  box-sizing: border-box;
+}
+
+.profile__content {
+  width: 410px;
+  margin: 0 auto;
+}
+
+.profile__header {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.profile-form {
+  margin: 0;
+  padding: 123px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-form__input-container {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-form__label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-form__input {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FFFFFF;
+  text-align: end;
+}
+
+.profile-form__input:focus {
+  outline: none;
+}
+
+.profile__line {
+  border-bottom: 1px solid #424242;
+}
+
+.profile-form__text {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.profile__button-section {
+  position: absolute;
+  bottom: 102px;
+  width: 410px;
+  margin: 0 auto;
+}
+
+.profile__edit-button {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.profile__edit-button_disabled {
+  opacity: 0.4;
+}
+
+.profile__log-out-button {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #EE3465;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.profile__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile__error-message {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #FF004C;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.profile__error-message_success {
+  color: greenyellow;
+}
+
+.profile__error-message_visible {
+  display: block;
+}
+
+.edit-button:hover, .log-out-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    padding: 70px 0 0;
+  }
+
+  .profile__content {
+    max-width: 260px;
+  }
+
+  .profile-form {
+    padding-top: 80px;
+  }
+
+  .profile__buttons {
+    bottom: 40px;
+  }
+
+  .profile__button-section {
+    width: 260px;
+    bottom: 71px;
+  }
+}

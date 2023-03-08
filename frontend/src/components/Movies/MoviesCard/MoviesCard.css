@@ -1,0 +1,105 @@
+.movie-card {
+  background: #2F2F2F;
+  display: grid;
+  grid-template-columns: calc(100% - 220px) 220px;
+  grid-template-rows: 122px;
+  padding: 6px 6px 6px 22px;
+  box-sizing: border-box;
+}
+
+.movie-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 0;
+}
+
+.movie-card__descr {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+
+.movie-card__header {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.movie-card__duration {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #8B8B8B;
+  margin: 0;
+}
+
+.movie-card__like-button {
+  width: 14px;
+  height: 12px;
+  background: url(../../../images/icons/like.svg) center no-repeat;
+  border: none;
+  transition: 0.5s;
+}
+
+.movie-card__like-button_active {
+  background: url(../../../images/icons/like_active.svg) center no-repeat;
+}
+
+.movie-card__dislike {
+  background: url(../../../images/icons/cross.svg);
+}
+
+.movie-card__like-button:hover, .movie-card__dislike:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.movie-card__picture {
+  width: 100%;
+  height: 122px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-card {
+    height: 232px;
+    padding: 0 0 14px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .movie-card__info {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 16px 0 12px;
+  }
+
+  .movie-card__descr {
+    gap: 8px;
+    padding: 0;
+  }
+
+  .movie-card__header {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .movie-cards__more {
+    width: 240px;
+    height: 36px;
+  }
+
+  .movie-card__picture {
+    height: 168px;
+  }
+}
