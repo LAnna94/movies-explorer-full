@@ -36,6 +36,20 @@ React приложение для поиска фильмов по запрос�
 
 
 **Ссылки проекта:**
-[Ссылка на макет](https://disk.yandex.ru/d/5LgYOTP4MandEA).
-[Ссылка на сайт](https://movies.lanna.nomoredomains.work).
+[Ссылка на макет](https://disk.yandex.ru/d/5LgYOTP4MandEA).  
+[Ссылка на сайт](https://movies.lanna.nomoredomains.work).  
 [Backend](https://api.movies.lanna.nomoredomains.club)
+
+
+**Запуск проекта:**
+
+Frontend:
+
+npm start — запускает проект в режиме разработчика.  
+npm run build — собирает проект для продакшена.  
+
+
+Backend:
+
+npm run start — запуск сервера в режиме production.  
+npm run dev — запуск сервера с hot-reload в режиме разработчика.  
